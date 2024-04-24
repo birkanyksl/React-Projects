@@ -8,6 +8,8 @@ import HelpIcon from "@mui/icons-material/Help";
 import WorkIcon from "@mui/icons-material/Work";
 import EventIcon from "@mui/icons-material/Event";
 import SchoolIcon from "@mui/icons-material/School";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 const Siderbar = () => {
   return (
@@ -57,94 +59,9 @@ const Siderbar = () => {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt=""
-            />
-            <span className="sidebarFriendName">Birkan Yüksel</span>
-          </li>
+          {Users.map((u) => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
