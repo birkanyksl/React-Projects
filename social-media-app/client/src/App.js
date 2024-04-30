@@ -8,10 +8,14 @@ import { AuthContext } from "./context/AuthContext";
 
 function App() {
   const { user } = useContext(AuthContext);
+  console.log(user);
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={user ? <Home /> : <Register />} />
+        <Route
+          path="/"
+          element={user ? <Home /> : <Navigate to="/register" />}
+        />
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
         <Route
           path="/register"
