@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const app = express(); // app nesnesini oluştur
 
-// CORS middleware'ini tanımla
 app.use(cors());
 
 const mongoose = require("mongoose");
@@ -33,18 +32,19 @@ const storage = multer.diskStorage({
     cb(null, "public/images");
   },
   filename: (req, file, cb) => {
-    cb(null, file.originalname);
+    cb(null, req.body.name);
   },
 });
 
-const upload = multer(storage);
+const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
   try {
-    return res.status(200).json("File uploaded successfully");
+    return res.status(200).json("File uploded successfully");
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 });
+
 // rotaları tanımla
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
