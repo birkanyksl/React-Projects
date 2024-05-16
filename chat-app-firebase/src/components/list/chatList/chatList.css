@@ -76,5 +76,5 @@
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #362e9e8a;
+  background-color: rgba(4, 3, 43, 0.712);
 }
