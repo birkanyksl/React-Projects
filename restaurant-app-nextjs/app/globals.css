@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .bg-gold {
-  background-color: #d8ae7bef;
+  background-color: #d892289d;
 }
 
 body {
-  background-color: rgba(14, 13, 13, 0.932);
+  background-color: #eb3d37e8;
   color: white;
 }

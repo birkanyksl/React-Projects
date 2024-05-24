@@ -35,24 +35,37 @@ const Menu = () => {
         />
       )}
       {open && (
-        <div className="bg-bg-gold text-black font-bold absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex gap-8 flex-col items-center justify-center text-3xl z-10">
+        <div className="bg-bg-gold text-white font-bold absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex gap-8 flex-col items-center justify-center text-3xl z-10 ">
           {links.map((item) => (
-            <Link href={item.url} key={item.id} onClick={() => setOpen(false)}>
-              {item.title}
-            </Link>
+            <div
+              key={item.id}
+              className="hover:text-red-600 transition-colors duration-300"
+            >
+              <Link href={item.url} onClick={() => setOpen(false)}>
+                {item.title}
+              </Link>
+            </div>
           ))}
           {!user ? (
-            <Link href="/login" onClick={() => setOpen(false)}>
-              Login
-            </Link>
+            <div className="hover:text-red-600 hover: transition-colors duration-300">
+              <Link href="/login" onClick={() => setOpen(false)}>
+                Login
+              </Link>
+            </div>
           ) : (
-            <Link href="/orders" onClick={() => setOpen(false)}>
-              Orders
-            </Link>
+            <div className="hover:text-red-600 transition-colors duration-300">
+              <Link href="/orders" onClick={() => setOpen(false)}>
+                Orders
+              </Link>
+            </div>
           )}
-          <Link href="/cart" onClick={() => setOpen(false)}>
+
+          <div
+            className="hover:text-red-600 transition-colors duration-300"
+            onClick={() => setOpen(false)}
+          >
             {<CartIcon />}
-          </Link>
+          </div>
         </div>
       )}
     </div>
