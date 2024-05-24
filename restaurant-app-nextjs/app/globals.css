@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-gold {
+  background-color: #d8ae7bef;
+}
+
+body {
+  background-color: rgba(14, 13, 13, 0.932);
+  color: white;
+}
