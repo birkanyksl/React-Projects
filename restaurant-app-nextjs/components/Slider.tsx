@@ -30,21 +30,21 @@ const data = [
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div className="flex gap-1 flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row">
       {/* TEXT CONTAINER  */}
       <div className=" flex flex-1 items-center justify-center flex-col gap-8 font-bold text-white ">
-        <h1 className="text-4xl text-center uppercase p-4 md:p-10 md:text-5xl xl:text-6xl">
+        <h1 className="text-3xl text-center uppercase p-4 md:p-10 md:text-5xl xl:text-6xl">
           {data[currentSlide].title}
         </h1>
-        <button className="bg-white text-red-600 py-4 px-8 rounded-bl-3xl rounded-tr-3xl hover:scale-105 transition-all duration-500 ">
+        <button className="bg-white text-red-600 py-4 px-8 rounded-bl-3xl rounded-tr-3xl hover:scale-105 hover:text-bg-gold transition-all duration-500 ">
           Order Now
         </button>
       </div>
