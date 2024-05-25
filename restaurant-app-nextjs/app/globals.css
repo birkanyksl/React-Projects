@@ -7,6 +7,16 @@
 }
 
 body {
-  background-color: #eb3d37e8;
-  color: white;
+  color: black;
 }
+
+/* .slider-text {
+  position: relative;
+  color: transparent;
+  background-image: url("/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+} */

@@ -1,4 +1,5 @@
 .customScrollbar {
+  overflow-y: hidden;
   overflow-x: scroll;
   cursor: pointer;
 }

@@ -6,29 +6,36 @@ import Image from "next/image";
 
 const Navbar = () => {
   const user = false;
-
   return (
-    <div className="font-semibold h-12 text-bg-gold bg-white p-4 flex items-center justify-between border-b-2 border-b-white uppercase md:h-24 lg:px-4 xl:px-36">
+    <div className="h-12 text-red-500 p-4 flex items-center justify-between border-b-[0.2px] border-b-bg-gold uppercase md:h-24 lg:px-12 xl:px-40 ">
       {/* LEFT LINKS */}
       <div className="hidden md:flex gap-4 flex-1">
-        <Link href="/">Homepage</Link>
-        <Link href="/menu">Menu</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/" className="hover:scale-105 transition-all duration-500">
+          Homepage
+        </Link>
+        <Link
+          href="/menu"
+          className="hover:scale-105 transition-all duration-500"
+        >
+          Menu
+        </Link>
+        <Link href="/" className="hover:scale-105 transition-all duration-500">
+          Contact
+        </Link>
       </div>
       {/* LOGO */}
       <div className="text-xl md:font-bold flex-1 md:text-center">
-        <Link href="/">Better Days </Link>
+        <Link href="/">BETTERDAYS</Link>
       </div>
       {/* MOBILE MENU */}
       <div className="md:hidden">
         <Menu />
       </div>
-
       {/* RIGHT LINKS */}
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
-        <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer px-1 bg-red-600 rounded-md">
+        <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer bg-orange-300 px-1 rounded-md">
           <Image src="/phone.png" alt="" width={20} height={20} />
-          <span className="text-white">232 758 1721</span>
+          <span>123 456 78</span>
         </div>
         {!user ? (
           <Link href="/login">Login</Link>
