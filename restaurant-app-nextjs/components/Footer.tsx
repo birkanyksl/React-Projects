@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="h-12 md:h-24 p-4 lg:p-20 xl:p-40 text-bg-gold bg-white flex items-center justify-between">
-      <Link href="/" className="font-bold text-xl">
+    <div className="h-5 md:h-10 p-4 text-xs text-bg-gold bg-white flex items-center justify-between">
+      <Link href="/" className="font-bold text-sm">
         BETTER DAYS
       </Link>
       <p>© ALL RIGHTS RESERVED.</p>

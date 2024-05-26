@@ -35,7 +35,7 @@ const Menu = () => {
         />
       )}
       {open && (
-        <div className="bg-bg-gold text-white font-bold absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex gap-8 flex-col items-center justify-center text-3xl z-10 ">
+        <div className=" bg-bg-gold text-white font-bold absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex gap-8 flex-col items-center justify-center text-3xl z-20 ">
           {links.map((item) => (
             <div
               key={item.id}
@@ -47,7 +47,7 @@ const Menu = () => {
             </div>
           ))}
           {!user ? (
-            <div className="hover:text-red-600 hover: transition-colors duration-300">
+            <div className=" hover:text-red-600 hover: transition-colors duration-300">
               <Link href="/login" onClick={() => setOpen(false)}>
                 Login
               </Link>
