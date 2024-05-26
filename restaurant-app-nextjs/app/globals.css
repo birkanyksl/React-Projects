@@ -6,8 +6,18 @@
   background-color: #d892289d;
 }
 
+.bg-navbar {
+  background: rgb(241, 209, 209);
+  background: radial-gradient(
+    circle,
+    rgba(241, 209, 209, 1) 0%,
+    rgba(238, 51, 51, 1) 97%
+  );
+}
+
 body {
   color: black;
+  background-color: white;
 }
 
 /* .slider-text {

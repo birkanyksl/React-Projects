@@ -7,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   const user = false;
   return (
-    <div className="h-12 text-bg-gold p-4 flex items-center justify-between border-b-[0.2px] border-b-bg-gold uppercase md:h-24 lg:px-12 xl:px-40 ">
+    <div className="h-16 md:h-24 font-bold bg-white text-black p-4 flex items-center justify-between uppercase lg:px-12 xl:px-40">
       {/* LEFT LINKS */}
       <div className="hidden md:flex gap-4 flex-1">
         <Link href="/" className="hover:scale-105 transition-all duration-500">
@@ -24,8 +24,19 @@ const Navbar = () => {
         </Link>
       </div>
       {/* LOGO */}
-      <div className="text-xl md:font-bold flex-1 md:text-center">
-        <Link href="/">BETTERDAYS</Link>
+      <div className="flex-1 flex justify-start md:justify-center items-center">
+        <Link href="/">
+          <div className="h-full flex items-center">
+            <Image
+              src="/betterdayslogo.png"
+              alt="Logo"
+              width={100}
+              height={100}
+              className="h-auto w-auto max-h-12 md:max-h-24"
+            />
+            <span className="ml-2 text-lg md:hidden">BETTER DAYS</span>
+          </div>
+        </Link>
       </div>
       {/* MOBILE MENU */}
       <div className="md:hidden">
@@ -33,9 +44,9 @@ const Navbar = () => {
       </div>
       {/* RIGHT LINKS */}
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
-        <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer bg-orange-300 px-1 rounded-md">
-          <Image src="/phone.png" alt="" width={20} height={20} />
-          <span>123 456 78</span>
+        <div className="md:absolute top-3 right-2 lg:static flex items-center gap-2 cursor-pointer bg-red-600 px-1 rounded-md">
+          <Image src="/phone.png" alt="Phone" width={20} height={20} />
+          <span className="text-white">123 456 78</span>
         </div>
         {!user ? (
           <Link href="/login">Login</Link>

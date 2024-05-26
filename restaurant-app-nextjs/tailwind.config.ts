@@ -12,12 +12,15 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "navbar-gradient":
+          "linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(68,68,68,1) 33%, rgba(11,11,11,1) 66%)",
       },
       colors: {
-        "bg-gold": "#f39308;",
+        "bg-gold": "#f39308",
       },
     },
   },
   plugins: [],
 };
+
 export default config;

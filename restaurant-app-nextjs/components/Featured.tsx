@@ -5,13 +5,15 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div className={`w-screen text-black bg-white ${styles.customScrollbar}`}>
+    <div
+      className={`w-screen bg-navbar-gradient text-white ${styles.customScrollbar}`}
+    >
       {/* WRAPPER */}
-      <div className="w-max flex ">
+      <div className="w-max flex bg-[url('/featuredbg.jpg')]">
         {/* SINGLE ITEM */}
         {featuredProducts.map((item) => (
           <div
-            className="w-screen h-[70vh] flex flex-col items-center justify-around p-4 md:w-[50vw] xl:w-[33vw] xl:h-[90vh] border-l border-y-yellow-50"
+            className="w-screen h-[70vh] flex flex-col items-center justify-around p-4 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]"
             key={item.id}
           >
             {/* IMG CONTAINER */}
@@ -21,7 +23,7 @@ const Featured = () => {
                   src={item.img}
                   alt=""
                   fill
-                  className="object-cover rounded-md"
+                  className="object-cover rounded-2xl shadow-sm shadow-white"
                 />
               </div>
             )}

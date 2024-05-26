@@ -20,7 +20,7 @@ const Menu = () => {
       {!open ? (
         <Image
           src="/open.png"
-          alt=""
+          alt="Open Menu"
           width={32}
           height={32}
           onClick={() => setOpen(true)}
@@ -28,43 +28,55 @@ const Menu = () => {
       ) : (
         <Image
           src="/close.png"
-          alt=""
+          alt="Close Menu"
           width={24}
           height={24}
           onClick={() => setOpen(false)}
         />
       )}
       {open && (
-        <div className=" bg-bg-gold text-white font-bold absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex gap-8 flex-col items-center justify-center text-3xl z-20 ">
-          {links.map((item) => (
+        <div className="bg-white text-black font-bold absolute left-0 top-28 w-full h-[calc(100vh-7rem)] flex gap-8 flex-col items-center justify-center text-3xl z-20">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-10">
+            <Image
+              src="/menubg.jpg"
+              alt="Background"
+              layout="fill"
+              objectFit="cover"
+              className=" "
+            />
+          </div>
+          {/* Menu Items */}
+          <div className="relative z-20 flex flex-col items-center justify-center gap-8">
+            {links.map((item) => (
+              <div
+                key={item.id}
+                className="hover:scale-110 scale-95 transition-all  duration-300"
+              >
+                <Link href={item.url} onClick={() => setOpen(false)}>
+                  {item.title}
+                </Link>
+              </div>
+            ))}
+            {!user ? (
+              <div className=" transition-all duration-300 hover:scale-110 scale-95">
+                <Link href="/login" onClick={() => setOpen(false)}>
+                  Login
+                </Link>
+              </div>
+            ) : (
+              <div className=" transition-all duration-300 hover:scale-110 scale-95">
+                <Link href="/orders" onClick={() => setOpen(false)}>
+                  Orders
+                </Link>
+              </div>
+            )}
             <div
-              key={item.id}
-              className="hover:text-red-600 transition-colors duration-300"
+              className=" transition-all duration-300 hover:scale-110 scale-95"
+              onClick={() => setOpen(false)}
             >
-              <Link href={item.url} onClick={() => setOpen(false)}>
-                {item.title}
-              </Link>
+              <CartIcon />
             </div>
-          ))}
-          {!user ? (
-            <div className=" hover:text-red-600 hover: transition-colors duration-300">
-              <Link href="/login" onClick={() => setOpen(false)}>
-                Login
-              </Link>
-            </div>
-          ) : (
-            <div className="hover:text-red-600 transition-colors duration-300">
-              <Link href="/orders" onClick={() => setOpen(false)}>
-                Orders
-              </Link>
-            </div>
-          )}
-
-          <div
-            className="hover:text-red-600 transition-colors duration-300"
-            onClick={() => setOpen(false)}
-          >
-            {<CartIcon />}
           </div>
         </div>
       )}

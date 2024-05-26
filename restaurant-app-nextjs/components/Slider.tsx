@@ -44,7 +44,7 @@ const Slider = () => {
   return (
     <div className="relative">
       {/* Slider Content */}
-      <div className="relative  flex gap-1 flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row">
+      <div className="relative  flex gap-1 flex-col h-[calc(100vh-7rem)] md:h-[calc(100vh-9rem)] lg:flex-row">
         {/* TEXT CONTAINER */}
         <div className="flex flex-1 items-center justify-center flex-col gap-8 font-extrabold text-yellow-100 relative">
           {/* Video Container */}
@@ -61,7 +61,7 @@ const Slider = () => {
             {data[currentSlide].title}
           </h1>
           <button className="z-10 bg-red-600 text-white font-bold py-2 px-3 rounded-bl-3xl rounded-tr-3xl hover:scale-105 transition-all duration-500">
-            Order Now
+            Menü için tıklayınız
           </button>
         </div>
 
