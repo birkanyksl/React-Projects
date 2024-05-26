@@ -16,7 +16,7 @@ const config: Config = {
           "linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(68,68,68,1) 33%, rgba(11,11,11,1) 66%)",
       },
       colors: {
-        "bg-gold": "#f39308",
+        "bg-gold": "#e6a33ed5;",
       },
     },
   },

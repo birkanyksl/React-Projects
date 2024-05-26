@@ -15,7 +15,7 @@ export const featuredProducts = [
     title: "Jack Daniel's Old No. 7",
     desc: "A classic Tennessee whiskey with smooth, rich flavors of caramel, vanilla, and oak, perfect for sipping on its own or mixing into your favorite cocktails.",
     price: 39.9,
-    img: "/temporary/p1.jpg",
+    img: "/temporary/p1.png",
     options: [
       {
         title: "750ml Bottle",
