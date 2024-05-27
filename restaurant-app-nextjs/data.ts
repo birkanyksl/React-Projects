@@ -206,7 +206,7 @@ export const pizzas: Products = [
     id: 2,
     title: "Mediterranean Delight",
     desc: "Embark on a culinary journey with this Mediterranean-inspired creation, featuring zesty feta cheese, Kalamata olives, sun-dried tomatoes, and a sprinkle of oregano.",
-    img: "/temporary/p8.png",
+    img: "/temporary/p8.jpg",
     price: 32.9,
     options: [
       {
@@ -227,7 +227,7 @@ export const pizzas: Products = [
     id: 3,
     title: "Bella Napoli",
     desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-    img: "/temporary/p3.png",
+    img: "/temporary/p3.jpg",
     price: 26.9,
     options: [
       {

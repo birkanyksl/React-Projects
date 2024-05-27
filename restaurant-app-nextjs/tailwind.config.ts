@@ -13,10 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "navbar-gradient":
-          "linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(68,68,68,1) 33%, rgba(11,11,11,1) 66%)",
+          "linear-gradient(45deg, rgba(250,51,51,1) 19%, rgba(252,135,135,1) 61%)",
       },
       colors: {
         "bg-gold": "#e6a33ed5;",
+        "gray-600": "#919495",
+        "gray-800": "#333",
+        "blue-600": "#337AB7",
+      },
+      boxShadow: {
+        lg: "8px 12px 30px rgba(0, 0, 0, 0.1)",
+      },
+      fontFamily: {
+        pacifico: ["Pacifico", "cursive"],
       },
     },
   },

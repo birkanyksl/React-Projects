@@ -39,15 +39,14 @@ const Menu = () => {
           {/* Background Image */}
           <div className="absolute inset-0 z-10">
             <Image
-              src="/menubg.jpg"
+              src="/menuBg.png"
               alt="Background"
               layout="fill"
-              objectFit="cover"
-              className=" "
+              className="object-cover "
             />
           </div>
           {/* Menu Items */}
-          <div className="relative z-20 flex flex-col items-center justify-center gap-8">
+          <div className="relative z-20 flex flex-col items-center justify-center gap-8 pt-20">
             {links.map((item) => (
               <div
                 key={item.id}
