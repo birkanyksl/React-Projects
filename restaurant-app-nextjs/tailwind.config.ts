@@ -23,6 +23,7 @@ const config: Config = {
       },
       boxShadow: {
         lg: "8px 12px 30px rgba(0, 0, 0, 0.1)",
+        myshadow: "3px 3px 16px rgba(0, 0, 0, 0.5)",
       },
       fontFamily: {
         pacifico: ["Pacifico", "cursive"],

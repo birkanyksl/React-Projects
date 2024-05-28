@@ -7,7 +7,7 @@ const Offer = () => {
     <div className="  flex flex-row md:justify-between bg-[url('/offerBg.png')] h-[50vh] md:h-[70vh] ">
       {/* TEXT CONTAINER */}
       <div className="flex-1 flex flex-col items-center justify-center text-center gap-6 p-6">
-        <h1 className="text-white text-3xl font-bold xl:text-4xl">
+        <h1 className="text-white text-xl font-bold xl:text-4xl">
           Exclusive Beer Sale: Chill with Up to 50% Off!
         </h1>
         <p className="text-white xl:text-xl">

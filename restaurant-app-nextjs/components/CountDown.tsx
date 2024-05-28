@@ -17,7 +17,7 @@ const CountDown = () => {
   }
 
   return (
-    <Countdown date={endingDate} className="font-bold text-bg-gold text-3xl" />
+    <Countdown date={endingDate} className="font-bold text-bg-gold text-2xl" />
   );
 };
 
