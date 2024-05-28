@@ -8,14 +8,14 @@ const CategoryPage = () => {
     <div className="bg-gray-100 flex flex-wrap shadow-lg">
       {pizzas.map((item) => (
         <Link
-          className="p-8 rounded-lg shadow-lg flex flex-col w-full md:w-1/2 lg:w-1/3 h-[40vh] "
+          className="p-4 rounded-lg shadow-lg flex flex-col items-center h-[30vh] w-full md:w-1/2 lg:w-1/3 hover:scale-102 transition-transform duration-300" // Added responsiveness styles
           href={`/product/${item.id}`}
           key={item.id}
         >
-          {/* IMAGE */}
-          <div className="flex flex-row h-full gap-2">
-            {item.img && (
-              <div className="w-1/2 relative aspect-w-1 aspect-h-1">
+          <div className="flex flex-row h-full w-full items-center">
+            {/* IMAGE */}
+            <div className="w-1/2 h-60 relative ">
+              {item.img && (
                 <Image
                   src={item.img}
                   alt=""
@@ -23,29 +23,26 @@ const CategoryPage = () => {
                   objectFit="contain"
                   className="rounded-lg"
                 />
-              </div>
-            )}
-            {/* TEXT */}
-            <div className=" mt-3 flex flex-col justify-between w-1/2">
-              <div className="flex flex-col gap-5 ">
-                <h1 className="text-xl font-bold text-gray-700">
-                  {item.title}
-                </h1>
-                <h2 className="text-sm text-gray-600 uppercase tracking-wide">
-                  by birkan
-                </h2>
-                <p className="text-sm text-gray-700 mt-2">
-                  BİRKAN BİRKAN BİRKAN
-                </p>
-              </div>
+              )}
             </div>
-          </div>
-          {/* PRICE AND BUTTON */}
-          <div className="flex justify-between mt-4 w-full">
-            <p className="text-xl text-gray-700 font-bold">${item.price}</p>
-            <button className="px-2 py-1 bg-red-600 text-white font-semibold uppercase rounded-bl-3xl rounded-tr-3xl hover:scale-105 transition-transform duration-500">
-              buy now
-            </button>
+
+            {/* TEXT */}
+            <div className="flex flex-col gap-2 p-2 w-1/2 overflow-hidden h-48 items-center justify-center text-left">
+              {" "}
+              {/* Centered text for mobile */}
+              <h1 className="text-xl font-bold text-gray-700 font-pacifico">
+                {item.title}
+              </h1>
+              <h2 className="text-sm text-gray-600 uppercase tracking-wide font-pacifico">
+                by birkan
+              </h2>
+              <button className="font-extralight px-3 py-1 mt-4 mb-4 bg-red-600 text-white  uppercase rounded-bl-3xl rounded-tr-3xl hover:scale-105  transition-transform duration-500 md:px-6 md:pxy-2">
+                buy now
+              </button>
+              <p className="text-xl text-gray-700 font-bold font-mono">
+                ${item.price}
+              </p>
+            </div>
           </div>
         </Link>
       ))}
