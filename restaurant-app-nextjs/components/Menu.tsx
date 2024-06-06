@@ -35,7 +35,7 @@ const Menu = () => {
         />
       )}
       {open && (
-        <div className="bg-white text-black font-bold absolute left-0 top-28 w-full h-[calc(100vh-7rem)] flex gap-8 flex-col items-center justify-center text-3xl z-20">
+        <div className="bg-white text-black font-bold absolute left-0 top-16 w-full h-[calc(100vh-4rem)] flex gap-8 flex-col items-center justify-center text-3xl z-20">
           {/* Background Image */}
           <div className="absolute inset-0 z-10">
             <Image

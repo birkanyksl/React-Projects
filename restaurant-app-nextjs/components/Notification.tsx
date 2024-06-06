@@ -3,7 +3,7 @@ import React from "react";
 
 const Notification = () => {
   return (
-    <div className="relative h-12 px-4 py-4 flex gap-2 items-center justify-center text-center text-xs md:text-sm cursor-pointer border-b-2">
+    <div className="relative h-12 px-4 py-4 flex gap-2 items-center justify-center text-center text-xs md:text-sm cursor-pointer border-b-2 bg-transparent">
       {/* <video
         autoPlay
         loop

@@ -13,7 +13,7 @@ const Featured = () => {
         {/* SINGLE ITEM */}
         {featuredProducts.map((item) => (
           <div
-            className="w-screen flex flex-col items-center justify-around p-3 md:w-[50vw] xl:w-[33vw] h-[60vh]"
+            className="w-screen flex flex-col items-center justify-around p-3  md:w-[50vw] xl:w-[33vw] h-[60vh]"
             key={item.id}
           >
             {/* IMG CONTAINER */}

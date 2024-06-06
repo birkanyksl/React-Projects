@@ -1,14 +1,16 @@
 import Featured from "@/components/Featured";
-import Landing from "@/components/Landing";
+
+import Notification from "@/components/Notification";
 import Offer from "@/components/Offer";
 import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
     <main className="">
-      <Landing />
-      <Offer />
+      {/* <Notification /> */}
       <Slider />
+      <Offer />
+
       {/* <Featured /> */}
     </main>
   );
