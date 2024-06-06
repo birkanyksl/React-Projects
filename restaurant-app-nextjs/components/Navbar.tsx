@@ -7,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   const user = false;
   return (
-    <div className="fixed mb-16 w-full h-16 md:h-24 font-bold bg-white text-black p-4 flex items-center justify-between  lg:px-12 xl:px-40 border-b-2 z-50">
+    <div className="fixed top-0 left-0 mb-16 w-full h-16 md:h-24 font-bold bg-transparent text-black p-4 flex items-center justify-between  lg:px-12 xl:px-40 border-b-2 z-50">
       {/* LEFT LINKS */}
       <div className="hidden md:flex gap-4 flex-1 uppercase">
         <Link href="/" className="hover:scale-105 transition-all duration-500">

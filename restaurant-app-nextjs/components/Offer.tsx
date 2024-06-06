@@ -31,7 +31,7 @@ const Offer = () => {
           <CountDown />
         </div>
         <div className="order-4">
-          <button className=" bg-red-600 text-white text-xs font-bold py-1 px-3 md:py-4 md:px-8 rounded-bl-3xl rounded-tr-3xl hover:scale-105 transition-all duration-500">
+          <button className=" bg-red-600 text-white text-xs font-bold py-3 px-16 md:py-4 md:px-8 rounded-bl-3xl rounded-tr-3xl hover:scale-105 transition-all duration-500">
             Order Now
           </button>
         </div>

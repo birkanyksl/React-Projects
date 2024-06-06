@@ -42,9 +42,9 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative mt-16 md:mt-24">
       {/* Slider Content */}
-      <div className="relative  flex gap-1 flex-col h-[calc(100vh-7rem)] md:h-[calc(100vh-9rem)] lg:flex-row">
+      <div className="relative  flex gap-1 flex-col h-[calc(100vh-4rem)] md:h-[calc(100vh-6rem)] lg:flex-row">
         {/* TEXT CONTAINER */}
         <div className="flex flex-1 items-center justify-center flex-col gap-8 font-extrabold text-yellow-100 relative">
           {/* Video Container */}
